@@ -1,0 +1,176 @@
+<html>
+
+<head>
+  <title>Project 89</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<style>
+  body {
+    background-image: url("https://happydays365.org/wp-content/uploads/2017/08/maths_blackboard-e1602736082495.jpg");
+  }
+
+  h1 {
+    border: 10px solid black;
+    width: 500px;
+    background-color: white;
+    color: green;
+    font-family: monospace;
+    font-size: 50px;
+  }
+
+  button {
+    color: green;
+    font-size: 30px;
+  }
+
+  .login:hover {
+    color: blue;
+    cursor: pointer;
+  }
+
+  #player_1 {
+    border-radius: 5px;
+    border-width: 5px;
+    border-color: black;
+    font-size: 20px;
+  }
+
+  #player_2 {
+    border-radius: 5px;
+    border-width: 5px;
+    border-color: black;
+    font-size: 20px;
+  }
+</style>
+
+<body>
+  <div id="login_screen" align="center">
+    <br><br><br><br><br><br>
+    <h1>MATHS QUIZ</h1>
+
+    <input type="text" id="player_1" placeholder="Player 1"></input>
+    <br><br>
+    <input type="text" id="player_2" placeholder="Player 2"></input>
+    <br>
+    <br>
+    <br>
+    <button id="login_button" class="login" onclick="login()">LOGIN</button>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
+
+<html>
+
+<head>
+  <title>Project 89</title>
+</head>
+<style>
+  body {
+    background-image: url("https://happydays365.org/wp-content/uploads/2017/08/maths_blackboard-e1602736082495.jpg");
+  }
+
+  h1 {
+    border: 10px solid black;
+    width: 500px;
+    background-color: white;
+    color: green;
+    font-family: monospace;
+    font-size: 50px;
+  }
+
+  #score_name1,
+  #score_name2 {
+    display: inline-block;
+    background-color: white;
+    font-family: monospace;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    font-size: 15px;
+    border: 3px black solid;
+  }
+
+  h4 {
+    display: inline-block;
+    font-family: monospace;
+    font-size: 20px;
+    background-color: white;
+    border: 3px black solid;
+  }
+
+  #player_question,
+  #player_answer {
+    font-family: monospace;
+    background-color: whitesmoke;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 3px black solid;
+  }
+
+  #score1,
+  #score2 {
+    background-color: white;
+    font-family: monospace;
+    width: fit-content;
+    border: 3px black solid;
+  }
+
+  button {
+    background-color: yellow;
+    color: brown;
+    font: 20px monospace;
+  }
+
+  #output {
+    margin-left: 10%;
+    margin-right: 10%;
+    background: lightgreen;
+    border-radius: 10px;
+    border-top: 10px solid #AA4465;
+    padding-left: 1%;
+    float: none;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+</style>
+
+<body>
+  <div id="second_screen"align="center">
+    <h1>MATHS QUIZ</h1>
+    <br><br>
+    <h3 id="score_name1"></h3> <span id="score1"></span>
+    <br>
+    <h3 id="score_name2"></h3> <span id="score2"></span>
+    <br>
+
+    <h3 id="player_question"></h3>
+    <h3 id="player_answer"></h3>
+    <hr>
+    <div id="output" class="col-lg-6"></div>
+    <hr>
+    <br>
+    <h4>MULTIPLICAND : </h4>
+    <span><input type="text" id="number1" class="fom-control"></span>
+    <br>
+    <h4>MULTIPLIER : </h4>
+    <input type="text" id="number2" class="fom-control">
+    <br><br>
+    <button onclick="send()" style="width:20%;">SEND</button>
+    </center>
+  </div>
+  <script src="main.js"></script>
+  <br>
+
+  </div>
+</body>
+
+</html>
